@@ -1,6 +1,6 @@
 # Imagery Approximation
  
-This repository contains the analysis code for the for the project "ADD FINAL TITLE HERE" by Rico Stecher & Daniel Kaiser (LINK). You can reproduce the analyses with the preprocessed data from this OSF repository:
+This repository contains the analysis code for the project "ADD FINAL TITLE HERE" by Rico Stecher & Daniel Kaiser (LINK). You can reproduce the analyses with the preprocessed data from this OSF repository:
 
 Please view the code structure below: 
 
