@@ -1,6 +1,6 @@
 # Imagery Approximation
  
-This repository contains the analysis code for the project "ADD FINAL TITLE HERE" by Rico Stecher & Daniel Kaiser (LINK). You can reproduce the analyses with the data from this OSF repository:... It contains the raw and preprocessed EEG data, all image sets used in the analysis as well as the CNN RDMs and EEG RDMs. 
+This repository contains the analysis code for the paper "A neuro-computational assessment of the qualities of mental images without introspection" by Rico Stecher & Daniel Kaiser (LINK). You can reproduce the analyses with the data from this OSF repository: https://osf.io/dxnhm/overview. It contains the raw and preprocessed EEG data, as well as the DNN RDMs and EEG RDMs. You can find all image sets used for this analysis in this Hugging Face dataset: https://huggingface.co/datasets/RicoStecher/Imagery_Approximation_Image_Sets.
 
 Please view the pipeline structure below. 
 
