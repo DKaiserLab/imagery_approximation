@@ -8,7 +8,7 @@ Please view the pipeline structure below.
 |  Step | Procedure & Script                |
 |-------|-----------------|
 | 1.1.  | Preprocessing: preprocess_EEG.m|
-| 1.2.  | Channel interpolation and frequency decomposition: X.m |
+| 1.2.  | Channel interpolation and frequency decomposition: fieldtrip_frequency_analysis_channel_interp.m |
 | 1.3.  | Image feature manipulation: alter_imager_properties.m   |
 | 2.1.  | EEG RDM creation: create_neural_RDMs.m   |
 | 2.2.  | DNN RDM creation: create_DNN_RDMs.m     |
