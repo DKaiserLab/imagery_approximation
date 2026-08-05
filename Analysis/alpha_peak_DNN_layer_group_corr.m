@@ -44,7 +44,7 @@ save('C:\MATLAB\Individual Scene Imagery\Results\frequency\RSA\peak_freqs.mat', 
 for cfg = [1, 3, 7]
 
     % load the DNN RDMs
-    load(['C:\MATLAB\Individual Scene Imagery\Results\DNN\vgg16_places365_RDM_cfg_', num2str(cfg), '.mat']);
+    load(['C:\MATLAB\Individual Scene Imagery\Results\DNN\vgg16_places365_RDMs_cfg_', num2str(cfg), '.mat']);
     
     % which DNN layers to average together
     layer_group_id = [1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4];

@@ -10,7 +10,7 @@ ss = [2:5, 7:12];
 subj_num = 1:length(ss);
 output_dir = 'C:\MATLAB\Individual Scene Imagery\Results\DNN\DNN correlations\';
 rdm_dir = 'C:\MATLAB\Individual Scene Imagery\Results\DNN\';
-filename = 'vgg16_places365_RDM_';
+filename = 'vgg16_places365_RDMs_';
 load('C:\MATLAB\Individual Scene Imagery\Results\frequency\RSA\peak_freqs.mat');
 
 % which DNN layers to average together
