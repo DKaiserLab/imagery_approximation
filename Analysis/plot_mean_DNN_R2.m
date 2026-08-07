@@ -1,9 +1,7 @@
 %% Housekeeping
-
 clear
 clc
 close all 
-
 %% Load data and define paths
 
 load('C:\MATLAB\Individual Scene Imagery\Results\DNN\DNN correlations\alpha_peak_RDM_DNN_3_layer_group_reg_R2.mat');
@@ -11,7 +9,6 @@ save_dir = 'C:\MATLAB\Individual Scene Imagery\Paper\Plots\';
 if ~exist(save_dir, 'dir'), mkdir(save_dir); end 
 
 %% Organize labels and data
-
 labels_in_order = ["baseline", "grayscale", "blurry", "low contrast", "noisy", "high cont high sat", ...
                    "3D model", "cubism", "pixel art", "psychedelic", "surrealism", "watercolor"];
 
@@ -46,6 +43,7 @@ for fig_num = 1:2
     
     labels_to_plot = final_labels(current_set_idx);
     labels_to_plot(labels_to_plot == "high cont high sat") = "vivid";
+    labels_to_plot(labels_to_plot == "baseline") = "\bf baseline";
     
     R2_mean = mean(DNN_rdm_R2, 1);
     R2_sem = std(DNN_rdm_R2, 0, 1) ./ sqrt(N);
@@ -63,7 +61,6 @@ for fig_num = 1:2
             0.00, 0.20, 0.70; % deep blue
             0.60, 0.00, 0.00  % dark red
         ];
-
         colors(2:end, :) = interp1(linspace(0,1,3), grad_anchors_deg, linspace(0,1,5));
     else
         grad_anchors_art = [
@@ -104,7 +101,7 @@ for fig_num = 1:2
             'MarkerFaceColor', 'w', 'MarkerSize', 10, 'LineWidth', 2.5);
     end
     uistack(h_baseline, 'bottom');
-
+    
     % significance brackets (vs baseline)
     
     p_values = []; 
@@ -159,7 +156,7 @@ for fig_num = 1:2
     xlim([0.3, length(current_set_idx) + 0.7]); 
     ylim([y_min, y_max]);
     
-    set(gca, 'Box', 'off', 'TickLabelInterpreter', 'none', 'LineWidth', 2.5);
+    set(gca, 'Box', 'off', 'TickLabelInterpreter', 'tex', 'LineWidth', 2.5);
     set(gca, 'Layer', 'top');
     axis square;
     grid off;
