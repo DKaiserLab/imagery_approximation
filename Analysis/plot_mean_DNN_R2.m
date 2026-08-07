@@ -1,7 +1,9 @@
 %% Housekeeping
+
 clear
 clc
 close all 
+
 %% Load data and define paths
 
 load('C:\MATLAB\Individual Scene Imagery\Results\DNN\DNN correlations\alpha_peak_RDM_DNN_3_layer_group_reg_R2.mat');
@@ -9,6 +11,7 @@ save_dir = 'C:\MATLAB\Individual Scene Imagery\Paper\Plots\';
 if ~exist(save_dir, 'dir'), mkdir(save_dir); end 
 
 %% Organize labels and data
+
 labels_in_order = ["baseline", "grayscale", "blurry", "low contrast", "noisy", "high cont high sat", ...
                    "3D model", "cubism", "pixel art", "psychedelic", "surrealism", "watercolor"];
 
@@ -101,7 +104,7 @@ for fig_num = 1:2
             'MarkerFaceColor', 'w', 'MarkerSize', 10, 'LineWidth', 2.5);
     end
     uistack(h_baseline, 'bottom');
-    
+
     % significance brackets (vs baseline)
     
     p_values = []; 
